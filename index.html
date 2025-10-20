@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA Workspace - Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 IA Workspace</h1>
+            <p class="subtitle">Seu assistente inteligente de produtividade</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <h2>Adicionar Nova Tarefa</h2>
+                <div class="input-group">
+                    <input type="text" id="taskInput" placeholder="Digite sua tarefa..." />
+                    <button id="addTaskBtn" class="btn-primary">Adicionar</button>
+                </div>
+            </section>
+
+            <section class="tasks-section">
+                <div class="section-header">
+                    <h2>Minhas Tarefas</h2>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">Todas</button>
+                        <button class="filter-btn" data-filter="active">Ativas</button>
+                        <button class="filter-btn" data-filter="completed">Concluídas</button>
+                    </div>
+                </div>
+                <ul id="taskList" class="task-list"></ul>
+                <div class="task-stats">
+                    <span id="taskCount">0 tarefas</span>
+                    <button id="clearCompleted" class="btn-secondary">Limpar Concluídas</button>
+                </div>
+            </section>
+
+            <section class="notes-section">
+                <h2>Notas Rápidas</h2>
+                <textarea id="notes" placeholder="Escreva suas notas aqui..."></textarea>
+                <button id="saveNotes" class="btn-primary">Salvar Notas</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 IA Workspace. Desenvolvido com ❤️</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
